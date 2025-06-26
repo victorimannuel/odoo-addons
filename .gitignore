@@ -1,0 +1,37 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Logs
+*.log
+
+# Compressed
+*.zip
+
+
+# Odoo
+*.pot
+*.mo
+*.swp
+.DS_Store
+
+# VSCode / IDE
+.vscode/
+*.code-workspace
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Environment
+.env
+.env.*
+*.sqlite3
+*.db
+
+# Custom folders
+node_modules/
+dist/
+build/
