@@ -1,0 +1,16 @@
+/*
+ * This CSS targets the checkboxes specifically within the mail suggested
+ * recipients component to avoid affecting other parts of the Odoo UI.
+ */
+
+ /* For major odoo version: 18.0 */
+.o-mail-SuggestedRecipient .form-check {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* For minor odoo version: 18.3 */
+.o-mail-RecipientsInput {
+    pointer-events: none;
+    opacity: 0.5;
+}
