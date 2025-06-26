@@ -46,8 +46,8 @@
             # 'mail_chatter_disable_suggested_recipient/static/src/css/disable_suggested_recipient.css',
         ],
     },
-    'images': [
-    ],
+    
+    'images': ['static/description/banner.gif'],
     'license': 'LGPL-3',
     'installable': True,
     'auto_install': False,
