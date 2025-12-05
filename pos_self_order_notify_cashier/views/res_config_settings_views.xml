@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- Inherit POS settings form to add self order sound setting -->
+    <record id="res_config_settings_view_form_menu" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.pos_self_order_notify_cashier.view</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="point_of_sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Add POS self order sound setting after background image setting -->
+            <xpath expr="//field[@name='pos_self_ordering_image_background_ids']/.." position="after">
+                <setting string="POS Cashier Sound Notification" help="Sound" invisible="pos_self_ordering_mode == 'nothing'">
+                    <field name="self_ordering_sound" filename="self_ordering_sound_filename" widget="binary"
+                        options="{'accepted_file_extensions': 'audio/*', 'number_of_files': 1}" />
+                </setting>
+            </xpath>
+            
+        </field>
+    </record>
+
+</odoo>
