@@ -4,7 +4,7 @@
     "category": "Point of Sale",
     "summary": "Notify cashier when a self order is placed using audio and visual notification",
     "author": "Victor Imannuel",
-    "license": "LGPL-3",
+    "license" : "OPL-1",
     "depends": [
         "point_of_sale",
         "pos_self_order",
@@ -22,6 +22,8 @@
             "pos_self_order_notify_cashier/static/src/overrides/floor_screen.js",
         ],
     },
+    'price': 50,
+    'currency': "USD",
     "installable": True,
     "application": False,
     "auto_install": False,
