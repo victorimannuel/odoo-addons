@@ -23,7 +23,7 @@
         ],
     },
     'price': 50,
-    'currency': "USD",
+    'currency': "EUR",
     "installable": True,
     "application": False,
     "auto_install": False,
